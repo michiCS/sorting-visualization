@@ -1,0 +1,90 @@
+:root {
+    --distance: 0px;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(218, 214, 214);
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(99, 99, 165);
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.topnav > * {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+button {
+    background-color: rgb(226, 226, 27);
+    border: none;
+    color: black;
+    padding: 7px 7px;
+    font-size: 14px;
+    border-radius: 5%;
+    font-weight: bold;
+    
+}
+
+.topnav > div {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.selected {
+    color:  rgb(226, 226, 27);
+}
+
+#arrayContainer {
+    height: 300px;
+    width: 950px;
+    position: fixed;
+    margin: 0 auto;
+    display: flex;
+    flex-grow: 10000;
+
+}
+
+.array-element {
+    background-color: #447C8F;
+    flex-grow: 1;
+    flex-direction: column;
+    /* transition: 0.3s all ease-in-out; */
+    top: 3;
+    margin-left: 5px;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+
+.moving {
+    background-color: #FF6F61;
+    transform: translate(var(--distance));
+    transition: 0.5s all ease-out;
+}
+
+.finished {
+    background-color: rgb(38, 214, 132);
+}
+
+.array-element > div {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transform: rotate(270deg);
+}
+
+
+
+
